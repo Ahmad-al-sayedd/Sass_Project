@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+  
+}
+li{
+    list-style: none;
+}
+$color-primary: #167a7e;
+$heading-color:rgb(71, 64, 64);
+$paddingSpace:0.8rem;
+%flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin widthMargins($width,$margin){
+    width: $width;
+    margin: $margin;
+}

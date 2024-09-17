@@ -1,0 +1,74 @@
+.header-container{
+
+    nav{
+        @extend %flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        ul{
+            
+            @extend %flex;
+            column-gap: 2rem;
+            padding: $paddingSpace;;
+            li{
+                
+                a{
+                    color:$color-primary;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    // Heading background image##########################################
+    .header-bg{
+        background-image: url(./images/header.jpg);
+        background-position: center;
+        background-size: cover;
+         h1{
+            text-align: center;
+            padding: $paddingSpace*4;
+         }
+    }
+    
+}
+
+
+@media (min-width: 768px) {
+    .header-container{
+      
+        nav{
+            @extend %flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            
+            justify-content: flex-end;
+            ul{
+                
+                @extend %flex;
+                column-gap: 2rem;
+                padding: $paddingSpace;
+              
+                padding-right: 2rem;
+              
+         
+            }
+        }
+    
+        // Heading background image##########################################
+        .header-bg{
+            background-image: url(./images/header.jpg);
+            background-position: center;
+            background-size: cover;
+             h1{
+                text-align: center;
+                padding: $paddingSpace*6;
+                
+             }
+        }
+        
+    }
+    
+  }
